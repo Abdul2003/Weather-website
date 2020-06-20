@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width-device-width,initial-scale=1.0"/>
+<meta http-equiv="X-UA-Compstible" content="ie-edge"/>  
+<link rel="stylesheet" href="style.css">  
+<link href="MuseoModerno\static\MuseoModerno-Medium.ttf" rel="stylesheet"> 
+ <title>Weather</title>   
+</head> 
+<body>
+    <section class="top-banner">
+        <div class="container">
+          
+          <form>
+            <input type="text" placeholder="Search For A City" autofocus>
+            <button class="searchbutton" type="submit">SUBMIT</button>
+            <span class="msg"></span>
+          </form>
+        </div>
+      </section>
+      <section class="ajax-section">
+        <div class="container">
+          <ul class="cities"></ul>
+        </div>
+      </section>
+
+<div class="location-Timezone">
+<h1 class="location">Location
+<span>Not Available</span></h1>
+<div class ="notification"></div>
+<div class="weather-container"></div>
+<div class="weather-icon"> 
+  <img src="icons/unknown-black.png">
+</div>
+</div>
+
+<div class="temperature">
+<div class="degree-section">    
+  <h2 class="temperature-value">0</h2>
+  </div>
+
+  <div class="temperature-description">not available</div> 
+</div>
+
+<div class="high-temperature">
+<img src="icons\icon\high.svg">High:0
+</div>
+
+<div class="low-temperature">
+    
+    <img src="icons\icon\low.svg">
+  Low:0</div>
+
+<button class="unitsbutton" type="button" id="mybutton">Click To Change Units</button>
+<div class= "bottom-bar">
+ Made By Abdul
+ <div><a href="https://openweathermap.org/" >Powered By OpenWeatherMap</a>
+  
+</div>
+<div class="icons">
+    <a href="https://twitter.com/dgeneral875">
+      <img src="icons\icon\Twitter.svg"></a>
+      <a href="https://facebook.com/d.general12">
+      <img src="icons\icon\Facebook.svg"></a>
+      <a href="https://www.instagram.com/d.general12">
+      <img src="icons\icon\Instagram.svg"></a>
+</div>
+
+
+<script src="redo.js"></script>
+
+
+</body>   
+</html>
