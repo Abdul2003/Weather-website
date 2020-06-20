@@ -98,14 +98,13 @@ input{
     height: 6vh;
     font-family: 'MuseoModerno', cursive;
     font-size: 25px;
+    margin-top:15px;
 }
 
 .bottom-bar{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 15px;
+    text-align: center;
 }
+
 
 
 
