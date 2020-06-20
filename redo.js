@@ -8,7 +8,7 @@ const notificationElement = document.querySelector(".notification");
 const tempLowElement = document.querySelector(".low-temperature")
 const tempHighElement = document.querySelector(".high-temperature");
 
- 
+
 
 //SEARCH BOX & API KEY
 const form = document.querySelector(".top-banner form");
@@ -19,8 +19,8 @@ form.addEventListener("submit", e => {
     e.preventDefault();
     const inputVal = input.value;
     const API_KEY = 'e955815ab3dfe6264aea41611bd607ec';
-    const api =  `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&exclude=hourly,minutely,daily&appid=${API_KEY}`
-    
+    const api = `https://api.openweathermap.org/data/2.5/weather?q=${inputVal}&exclude=hourly,minutely,daily&appid=${API_KEY}`
+
     //APP data
     const weather = {};
 
@@ -33,10 +33,10 @@ form.addEventListener("submit", e => {
     const KELVIN = 273;
 
     fetch(api)
-    .then(function(response){
-        let data = response.json();
-        return data;
-    })
+        .then(function (response) {
+            let data = response.json();
+            return data;
+        })
 
         .then(function (data) {
             weather.temperature.value = Math.floor(data.main.temp -

@@ -1,3 +1,4 @@
+
 * {
  margin: 0;
  padding: 0;
@@ -11,8 +12,8 @@ body {
   flex-direction: column;
   align-items: center;
   background: linear-gradient(rgb(173, 190, 16),white);
-  font-family: 'MuseoModerno', cursive;
-}
+  font-family: 'MuseoModerno', cursive;}
+
 .location-Timezone,
 .temperature{
     height: 30vh;
@@ -64,7 +65,8 @@ body {
 
 .temperature-description{margin: 1px;
     font-family: 'MuseoModerno', cursive;
-font-size: 30px;}
+font-size: 30px;
+}
 
 .unitsbutton{border-radius: 2px;
 background-color: skyblue;
@@ -98,14 +100,16 @@ input{
     height: 6vh;
     font-family: 'MuseoModerno', cursive;
     font-size: 25px;
-    margin-top:15px;
 }
-
+@media screen and (min-width:730px){
 .bottom-bar{
-    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 15px;
+
 }
-
-
+}
 
 
 
