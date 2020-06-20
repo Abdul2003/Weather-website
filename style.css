@@ -103,6 +103,10 @@ input{
     height: 6vh;
     font-family: 'MuseoModerno', cursive;
     font-size: 25px;
+    
+}
+.bottom-bar{
+    color: rgb(255, 0, 0);
 }
 @media screen and (min-width:730px){
 .bottom-bar{
