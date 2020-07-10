@@ -24,17 +24,11 @@ body {
   justify-content: space-around;
   align-items: center;
   font-family: "Ubuntu", sans-serif;
-  
 }
 
-.location{
+.location {
   padding-right: 130px;
-  
-  
-  
-  
 }
-
 
 .temperature {
   flex-direction: column;
