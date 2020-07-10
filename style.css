@@ -1,8 +1,7 @@
-
 * {
- margin: 0;
- padding: 0;
- box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -11,123 +10,163 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: aqua;
-  background-image: url("background.jpg");
+  background-color: lightgrey;
   background-size: cover;
-  
-  font-family: 'Museo Sans 500';}
+  background-attachment: fixed;
+  background-position: 0;
+  font-family: "Ubuntu", sans-serif;
+}
 
 .location-Timezone,
-.temperature{
-    height: 30vh;
-    width: 50%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center; 
-    font-family: 'Museo Sans 500';
-    
+.temperature {
+  height: 30vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Ubuntu", sans-serif;
+  
 }
 
-.temperature{
-    flex-direction: column;
+.location{
+  padding-right: 130px;
+  
+  
+  
+  
+}
+
+
+.temperature {
+  flex-direction: column;
 }
 .degree-section {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 .degree-section span {
-    margin: 10px;
-    font-size: 30px;
+  margin: 10px;
+  font-size: 30px;
 }
-.degree-section h2{
-    font-size: 40px ;
+.degree-section h2 {
+  font-size: 40px;
 }
-.high-temperature{
-    margin: 0px;
-    font-size: 25px;
-    text-align: left;
-    color: red; 
-    font-family: 'Museo Sans 500';
+.high-temperature {
+  margin: 0px;
+  font-size: 25px;
+  text-align: left;
+  color: #ff0000;
+  font-family: "Ubuntu", sans-serif;
 }
-.low-temperature
-{
-    margin: 0px;
-    font-size: 25px;
-    text-align: left;
-     color: blue;
-     font-family: 'Museo Sans 500';
-}
-
-
-
-.location-country {margin: 5px;
-    font-size: 25px;}
-    .location span{margin: 1px;
-        font-family:'Museo Sans 500';
+.low-temperature {
+  margin-top: 15px;
+  font-size: 25px;
+  text-align: left;
+  color: #0000ff;
+  font-family: "Ubuntu", sans-serif;
 }
 
-.temperature-description{margin: 1px;
-    font-family:'Museo Sans 500';
-font-size: 30px;
+.temperature-description {
+  margin: 1px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+  text-transform: capitalize;
 }
 
-.unitsbutton{border-radius: 2px;
-background-color: skyblue;
-text-decoration: black;
-text-align: center;
-padding: 15px 32px;
-border: none;
-display: inline-block;
-transition-duration: 0.4s;
-font-family: 'Museo Sans 500';
-font-size: 17px;
-margin: 0px;
+.unitsbutton {
+  background-color: #87ceeb;
+  text-decoration: black;
+  text-align: center;
+  padding: 15px 32px;
+  border: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+.unitsbutton:hover {
+  background-color: #3fbaeb;
 }
 
-.unitsbutton:hover{background-color: gold;
-
+.searchbutton {
+  cursor: pointer;
+  border-radius: 2px;
+  background-color: #87ceeb;
+  text-decoration: black;
+  text-align: center;
+  padding: 5px 16px;
+  border: none;
+  display: inline-block;
+  transition-duration: 0.4s;
+  font-size: 23px;
 }
-.searchbutton{border-radius: 2px;
-    background-color: crimson;
-    text-decoration: black;
-    text-align: center;
+.searchbutton:hover {
+  background-color: #3fbaeb;
+}
+
+input {
+  width: 40vh;
+  height: 6vh;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 10px;
+  display: flexbox;
+}
+
+.author {
+  color: rgb(0, 0, 0);
+  font-family: "Ubuntu", sans-serif;
+  font-size: 30px;
+}
+.footer {
+  text-align: center;
+  padding: 0;
+  background-color: grey;
+  color: white;
+  width: 100%;
+  margin-bottom: -50px;
+  margin-top: 30px;
+}
+ul#list li {
+  display: inline;
+}
+@media screen and (max-width: 526px) {
+  input {
+    width: 300px;
+  }
+  .searchbutton {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+@media screen and (min-width: 526px) {
+  .searchbutton {
     padding: 5px 16px;
-    border: none;
-    display: inline-block;
-    transition-duration: 0.4s;
-
+  }
+}
+@media screen and (max-width: 396px) {
+  .temperature-description {
+    font-size: 29px;
+    text-align: center;
+  }
 }
 
-input{
-    width: 40vh;
-    height: 6vh;
-    font-family: 'Museo Sans 500';
-    font-size: 25px;
-    
-}
-.bottom-bar{
-    color: rgb(255, 0, 0);
-    font-family: 'Museo Sans 500';
-}
-@media screen and (min-width:730px){
-.bottom-bar{
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    font-size: 15px;
-
-}
+@media screen and (max-height: 500px) {
+  .top-banner {
+    margin-top: 50px;
+  }
+  .searchbutton {
+    padding: 1px;
+    font-size: 17px;
+  }
+  input {
+    font-size: 18px;
+  }
 }
 
-
-
-
-
-   
-   
-
-
-    
-
-
+.link {
+  color: #0000ff;
+}

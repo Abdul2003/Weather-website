@@ -1,75 +1,83 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8"/>
-<meta name="viewport" content="width-device-width,initial-scale=1.0"/>
-<meta http-equiv="X-UA-Compstible" content="ie-edge"/>  
-<link rel="stylesheet" href="style.css">  
-<link href="Fonts\MuseoSans_500.otf" type="text/css" rel="stylesheet"> 
- <title>Current Weather</title>   
-</head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width-device-width,initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compstible" content="ie-edge" />
+  <link rel="stylesheet" href="style.css">
+  <link href="/fonts/ubuntumedium.ttf" type="text/css">
+  <title>Current Weather</title>
+</head>
+
 <body>
-    <section class="top-banner">
-        <div class="container">
-          
-          <form>
-            <input type="text" placeholder="Search For A City" autofocus>
-            <button class="searchbutton" type="submit">SUBMIT</button>
-            <span class="msg"></span>
-          </form>
-        </div>
-      </section>
-      <section class="ajax-section">
-        <div class="container">
-          <ul class="cities"></ul>
-        </div>
-      </section>
+  <section class="top-banner">
+    <div class="container">
 
-<div class="location-Timezone">
-<h1 class="location">Location
-<span>Not Available</span></h1>
-<div class ="notification"></div>
-<div class="weather-container"></div>
-<div class="weather-icon"> 
-  <img src="icons/unknown-black.png">
-</div>
-</div>
+      <form>
+        <input type="text" placeholder="Search For A City" autofocus>
+        <button class="searchbutton" type="submit">SUBMIT</button>
+        <span class="msg"></span>
+      </form>
+    </div>
+  </section>
+  <section class="ajax-section">
+    <div class="container">
+      <ul class="cities"></ul>
+    </div>
+  </section>
+  <div id="time"></div>
 
-<div class="temperature">
-<div class="degree-section">    
-  <h2 class="temperature-value">0</h2>
+  <div class="location-Timezone">
+    <h1 class="location">Location Not Available
+    </h1>
+  
+
+    <div class="weather-icon">
+      <img src="icons/unknown-black.png">
+    </div>
   </div>
 
-  <div class="temperature-description">not available</div> 
-</div>
+  <div class="temperature">
+    <div class="degree-section">
+      <h2 class="temperature-value">0</h2>
+    </div>
 
-<div class="high-temperature">
-<img src="icons\icon\high.svg">High:0
-</div>
+    <div class="temperature-description">not available</div>
+  </div>
 
-<div class="low-temperature">
-    
+  <div class="high-temperature">
+    <img src="icons\icon\high.svg">High:0
+  </div>
+
+  <div class="low-temperature">
+
     <img src="icons\icon\low.svg">
-  Low:0</div>
+    Low:0</div>
 
-<button class="unitsbutton" type="button" id="mybutton">Click To Change Units</button>
-<div class= "bottom-bar">
- Made By Abdul
- <div><a style="color:rgb(255, 68, 0)" href="https://openweathermap.org/" >Powered By OpenWeatherMap</a>
-  
-</div>
-<div class="icons">
-    <a href="https://twitter.com/dgeneral875">
-      <img src="icons\icon\Twitter.svg"></a>
-      <a href="https://facebook.com/d.general12">
-      <img src="icons\icon\Facebook.svg"></a>
-      <a href="https://www.instagram.com/d.general12">
-      <img src="icons\icon\Instagram.svg"></a>
-</div>
+  <button class="unitsbutton" type="button" id="mybutton">Click To Change Units</button>
+  <div class="footer">
+
+    <div><a class="link" id="li" href="https://openweathermap.org/">Powered By OpenWeatherMap</a>
+      <ul id="list">
+        <li class="author">
+          Made By Abdul</li>
+
+        <li class="icons">
+          <a href="https://twitter.com/dgeneral875">
+            <img src="/icons\icon\twitter.svg"></a>
+          <a href="https://facebook.com/d.general12">
+            <img src="/icons\icon\facebook.svg"></a>
+          <a href="https://www.instagram.com/d.general12">
+            <img src="/icons\icon\instagram.svg"></a>
+        </li>
+      </ul>
 
 
-<script src="redo.js"></script>
+
+      <script src="redo.js"></script>
 
 
-</body>   
+</body>
+
 </html>
