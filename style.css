@@ -26,9 +26,6 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-.location {
-  padding-right: 130px;
-}
 
 .temperature {
   flex-direction: column;
@@ -129,17 +126,20 @@ ul#list li {
 }
 @media screen and (max-width: 526px) {
   input {
-    width: 300px;
+    width: 200px;
+  
   }
-  .searchbutton {
-    padding-top: 15px;
-    padding-bottom: 15px;
+  .searchbutton{
+    padding: 9px;
   }
+  
 }
 @media screen and (min-width: 526px) {
   .searchbutton {
     padding: 5px 16px;
+    margin-top: 40px;
   }
+  
 }
 @media screen and (max-width: 396px) {
   .temperature-description {
@@ -148,7 +148,7 @@ ul#list li {
   }
 }
 
-@media screen and (max-height: 500px) {
+@media screen and (max-height: 510px) {
   .top-banner {
     margin-top: 50px;
   }
