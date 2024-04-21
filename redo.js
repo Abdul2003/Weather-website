@@ -7,13 +7,13 @@ const notificationElement = document.querySelector(".notification");
 const tempLowElement = document.querySelector(".low-temperature");
 const tempHighElement = document.querySelector(".high-temperature");
 
-//CHANGE BACKGROUND IMAGE
+//CHANGE BACKGROUND IMAGE DEPENDING ON TIME OF THE DAY
 var today = new Date();
 var h = today.getHours();
 if (h >= 17 || h < 7) {
-  document.body.style.backgroundImage = "url('/images/background night.jpg')";
+  document.body.style.backgroundImage = "url('./images/background night.jpg')";
 } else
-  document.body.style.backgroundImage = "url('/images/background day.jpg')";
+  document.body.style.backgroundImage = "url('./images/background day.jpg')";
 
 //SEARCH BOX & API KEY
 const form = document.querySelector(".top-banner form");
