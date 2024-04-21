@@ -10,7 +10,7 @@ const tempHighElement = document.querySelector(".high-temperature");
 //CHANGE BACKGROUND IMAGE
 var today = new Date();
 var h = today.getHours();
-if (h >= 17 || h < 07) {
+if (h >= 17 || h < 7) {
   document.body.style.backgroundImage = "url('/images/background night.jpg')";
 } else
   document.body.style.backgroundImage = "url('/images/background day.jpg')";
